@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>校园论坛 - 首页</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div class="main-container">
+    <div class="layout-three-col">
+      <div id="sidebarLeft"></div>
+      <div>
+        <div class="card">
+          <div class="sort-bar">
+            <button class="active" onclick="sortPosts('latest', this)">最新</button>
+            <button onclick="sortPosts('hot', this)">最热</button>
+          </div>
+          <div id="postList"></div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+      <div id="sidebarRight"></div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
